@@ -1,0 +1,61 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: #f1c40f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url('https://media.tenor.com/rbvBpcaxKWEAAAAj/stars-galaxy.gif');
+    background-size: cover;
+    transform: perspective(300px) rotateX(25deg);
+    position: relative;
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.container {
+    width: 100%;
+    perspective: 300px;
+    transform-style: preserve-3d;
+    animation: scroll 100s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes scroll {
+    0% {
+        transform: translateY(100%) perspective(300px);
+    }
+    100% {
+        transform: translateY(-200%) perspective(300px);
+    }
+}
+.btn-primary {
+    background-color: #f1c40f;
+    border-color: black;
+    color: black;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #f1c40f;
+    border-color: #f1c40f;
+    color: black;
+}
+.footer {
+    position: absolute;
+    bottom: 10.1rem;
+    width: 100%;
+    height: 1.0rem;
+    color: white;
+    text-align: center;
+    line-height: .2rem;
+}
